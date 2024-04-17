@@ -3,9 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <title>Document</title>
 </head>
 <body>
+    <h1>Imagem Flexível</h1>
+    <p>Você esta vendo a imagem completa? Experimente ampliar o tamanho da <br>
+       sua janela para aproveitar melhor a experiência.</p>
+<picture>
     
+    <source media="(max-width: 700px )" srcset="image/paisagem-p.png">
+    <source media="(max-width: 1000px )" srcset="image/paisagem-m.png">
+    <img src="imagens/paisagem-g.png" alt="paisagem-g">
+    
+</picture>
 </body>
 </html>
