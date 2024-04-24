@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+header{
+ background-color: rgb(2, 204, 2);
+}
+header > h1{
+    color: white;
+}
+header > p{
+    color: white;
+}
+
+nav{
+ background-color: rgba(43, 65, 43, 0.911);
+}
+
+nav > p{
+    
+}
+
+article{
+
+}
+
+article > h2{
+
+}
+
+article > p{
+
+}
+
