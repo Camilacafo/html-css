@@ -1,7 +1,50 @@
 @charset "UTF-8";
 
 body{
-    background-color: yellow;
+    background-color: white;
     box-shadow: 1px, 1px, 1px black;
     text-align: center;
 }
+
+header{
+    
+}
+
+span{
+    margin: auto;
+    text-align: center;
+    font-size: 1.5em;
+    font-style: italic;
+    color: black;
+}
+
+main{
+    background-color: rgba(248, 213, 15, 0.438);
+}
+
+section{
+    background-color: rgba(153, 205, 50, 0.507);
+}
+
+h2{
+    color: black;
+}
+
+section > div {
+    align-items: left;
+}
+
+section > span{
+    align-items: right;
+}
+
+div>img{ 
+    width: 100px;
+    height: 100px;
+}
+
+span>p{ /* USAR SHORTHANDS*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
