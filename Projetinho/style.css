@@ -10,8 +10,7 @@ body{
 }
 
 header{
-    background-image: linear-gradient(yellow, rgb(248, 172, 7), rgb(205, 240, 6));
-    
+    background-image: linear-gradient(90deg yellow, rgb(248, 172, 7), rgb(183, 214, 5));
 }
 
 header> span > h1{
@@ -37,11 +36,11 @@ span{
 }
 
 main{
-    background-color: rgba(248, 213, 15, 0.438);
+    background-color: rgba(247, 213, 25, 0.438);
 }
 
 section{
-    background-color: rgba(153, 205, 50, 0.507);
+    background-color: rgba(177, 204, 79, 0.39);
 }
 
 h2{
