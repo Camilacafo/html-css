@@ -9,12 +9,12 @@
 }
 
 :root{
-    --cor0: #a3e4b4;
-    --cor1: #72dfa3;
+    --cor0: #83d699;
+    --cor1: #5dcc8f;
     --cor2: #32db7e;
-    --cor3: #2fa866;
-    --cor4: #1a5c37;
-    --cor5: #063d1e;
+    --cor3: #259b5a;
+    --cor4: #14522f;
+    --cor5: #033318;
 
     --font-padrao: arial, Verdana, Helvetica, Sans-Serif;
 
@@ -35,7 +35,7 @@ body{
 }
 
 header{
-    background-color: var(--cor4);
+   background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
     min-height: 150px;
     text-align: center;
     padding-top: 40px;
@@ -46,7 +46,7 @@ header > h1 {
     font-family: var(--font-destaque);
     font-size: 3em;
     margin-bottom: 20px;
-    
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.548);
 }
 
 header > p {
@@ -57,10 +57,28 @@ header > p {
     margin: auto;
     padding-right: 10px;
     padding-left: 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.377);
 }
 
 nav{
     background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 9px 0px rgba(0, 0, 0, 0.637);
+}
+
+nav > a {
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover {
+    background-color: var(--cor3);
+    color: var(--cor5);
+    border-radius: 8px;
 }
 
 main{
