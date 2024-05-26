@@ -67,7 +67,7 @@ nav > a {
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
-    transition-duration: 0.5s;
+    transition-duration: 0.5s; /* tempo de transição das configurações (ao passar o mouse)*/
 }
 
 nav > a:hover {
@@ -97,12 +97,42 @@ main h2{
     font-family: var(--font-android);
 }
 
+main p { /* não colocar o sinal de maior que (>) pois tem divs dentro do main, dessa forma a configuração será aplicada aos parágrafos de todo o main incluindo os das divs,com o sinl de maior ele não aplicaria aos que estão nas divs*/
+    margin: 15px 0px;
+    text-align: justify; /* Alinhamento do texto */
+    text-indent: 30px; /* recuo do inicio do parágrafo */
+    font-size: 1em;
+    line-height: 2em; /*Altura da linha (espaçamento entre as linhas)*/
+
+}
+
+main strong {
+    color: var(--cor4);
+    font-weight: bold;
+    padding: 2px 6px;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor0);
+    padding: 2px 6px;   
+}
+
+main a:houver{
+    text-decoration: underline;
+    color: var(--cor4);
+    
+
+}
+
 main img {
     width: 100%;
 }
 
 main img.pequena {
-    width: 50%;
+    max-width: 350px;
     display: block;
     margin: auto;
 }
