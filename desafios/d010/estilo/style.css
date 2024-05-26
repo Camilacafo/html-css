@@ -95,7 +95,11 @@ main h1{
 
 main h2{
     font-family: var(--font-android);
-}
+    color: var(--cor5);
+    font-size: 1.3em;
+    text-indent: 8px;
+    background-image: linear-gradient(to right, var(--cor2), transparent);
+} /*A posição do background image linear-gradiente  é indicada em ingles (to top, to right, to botton, to left) */
 
 main p { /* não colocar o sinal de maior que (>) pois tem divs dentro do main, dessa forma a configuração será aplicada aos parágrafos de todo o main incluindo os das divs,com o sinl de maior ele não aplicaria aos que estão nas divs*/
     margin: 15px 0px;
@@ -123,8 +127,6 @@ main a {
 main a:houver{
     text-decoration: underline;
     color: var(--cor4);
-    
-
 }
 
 main img {
