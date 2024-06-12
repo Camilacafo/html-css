@@ -69,19 +69,23 @@ section.normal {
 }
 
 section.imagem {
+    background-attachment: fixed;
     background-color: rgba(22, 22, 22, 0.815);
+    background-size: cover;
     color: white;
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.692);
 }
 
 section.imagem > p {
-    background-color: rgba(5, 5, 5, 0.267);
+    background-color: rgba(5, 5, 5, 0.493);
     display: inline-block;
     padding: 8px;
+    text-shadow: 2px 1px 0px black;
 }
 
 section#img01{
     background-image: url('../imagens/background001.jpg');
-    background-position: ;
+    background-position: right center ;   
 }
 
 section#img02{
