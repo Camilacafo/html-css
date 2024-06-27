@@ -11,11 +11,20 @@
 
         table{
             padding: 10px;
-            
+            border-collapse: collapse;
+        }
+
+        caption{
+            font-size: 1.5em;
+            background-color: rgba(168, 168, 168, 0.945);
+            border: 1px solid black;
+            padding: 10px;
+            font-weight: bold;
         }
 
         thead{
             border: 1px solid rgba(0, 0, 0, 0.877);
+            color: white;
         }
 
         th,td,tr{
@@ -24,30 +33,34 @@
         }
 
         th{
-            background-color: gray;
+            background-color: rgba(128, 128, 128, 0.938);
+        }
+
+        tbody > tr > th{
+            color: white;
         }
     </style>
 </head>
 <body>
     <table>
-        <caption>tabela de notas</caption>
+        <caption>TABELA DE NOTAS</caption>
         <thead>
-            <th rowspan="2">ÁREA</th>
-            <th rowspan="2">DISCIPLINA</th>
-            <th colspan="2" >NOTAS</th>
-            <th rowspan="2">MÉDIA</th>
+            <th rowspan="2" scope="col">ÁREA</th>
+            <th rowspan="2" scope="col">DISCIPLINA</th>
+            <th colspan="2" scope="colgroup">NOTAS</th>
+            <th rowspan="2" scope="col">MÉDIA</th>
+            
+            <tr>
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
+            </tr>
             
         </thead>
         <tbody>
-        
+                            
+           
             <tr>
-                <td></td>
-                <td></td>
-                <th>Nota 1</th>
-                <th>Nota 2</th>
-            </tr>
-            <tr>
-                <th rowspan="4">Exatas</th>
+                <th rowspan="4" scope="rowgroup">Exatas</th>
                 <td>matemática</td>
                 <td>0.0</td>
                 <td>0.0</td>
@@ -73,11 +86,11 @@
               
             </tr>
             <tr>
-                <th colspan="4">média das exatas</th>
-                <td>0.0</td>
+                <th colspan="4" scope="row">média das exatas</th>
+                <th>0.0</th>
             </tr>
             <tr>
-                <th rowspan="2">Humanas</th>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
                     <td>história</td>
                     <td>0.0</td>
                     <td>0.0</td>
@@ -91,8 +104,8 @@
                 </tr>
             </tr>
             <tr>
-                <th colspan="4">Média das Humanas</th>
-                <td>0.0</td>
+                <th colspan="4" scope="row">Média das Humanas</th>
+                <th>0.0</th>
             </tr>
         </tbody>
     </table>
