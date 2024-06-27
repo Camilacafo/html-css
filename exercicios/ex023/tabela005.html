@@ -13,8 +13,9 @@
             width: 500px;
             border-collapse: collapse;
         }
+
         caption{
-            font-size: 1.3em;
+            font-size: 1.5em;
             font-weight: bolder;
             padding: 8px;
         }
@@ -23,11 +24,25 @@
             border: 1px solid black;
             padding: 8px;
         }
+
+        .verde{
+            background-color: rgba(0, 100, 0, 0.842);
+        }
+
+        .amarelo{
+            background-color: yellow;
+        }
     </style>
 </head>
 <body>
     <h1>Exercício de Tabelas</h1>
     <table>
+        <colgroup>
+            <col class="amarelo">
+            <col class="verde" span="2">
+            <col class="amarelo">
+                       
+        </colgroup>
         <caption>CADASTRO</caption>
         <tr>
             <th scope="col">nome</th>
