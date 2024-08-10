@@ -3,14 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulários</title>
+    <title>Formulário</title>
 </head>
 <body>
-    <h1>Exemplo de Formulários</h1>
+    <h1>Exemplo de Formulário</h1>
 
-    <form action="cadastroo.php" method="get">
+    <form action="cadastroo.php" method="get" autocomplete="on">
+
+        <fieldset>
+            <legend>
+                DADOS PESSOAIS:
+            </legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" minlength="8" maxlength="30" placeholder="Nome completo" required>
+            </p>
+            <p>
+                <label for="iemail">E-mail:</label>
+                <input type="email" name="email" id="iemail" placeholder="xxxx@gmail.com" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="itel">Telefone:</label>
+                <input type="tel" name="fone" id="itel" autocomplete="tel" pattern="^\(\d{2}\)\d{5}\d{4,5}$" required placeholder="(xx)xxxxxxxxx">
+            </p>
+        </fieldset>
+
         <p>
-            <label for=""></label>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
         </p>
     </form>
 </body>
