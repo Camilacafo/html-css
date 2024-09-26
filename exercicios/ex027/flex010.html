@@ -8,7 +8,7 @@
         div.container{
             background-color: lightsalmon;
             
-
+            flex-flow: row wrap;
             display: flex;
         }
 
@@ -17,19 +17,24 @@
             padding: 5px;
             border: 1px solid black;
             text-align:center;
-            flex: auto;
+            flex-basis: 300px;
+            flex-shrink: 1;
+            flex-grow: 1;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
+        <div class="item">A: 
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam enim quis provident inventore vel tenetur excepturi exercitationem praesentium perspiciatis iure quo sapiente maxime repudiandae, accusantium totam, voluptatibus odit aperiam. Eaque!
+        </div>
+        <div class="item">B: 
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum unde harum enim, sint accusantium inventore ducimus reiciendis temporibus labore quam numquam commodi odit nobis, adipisci eos. Perferendis amet illo et.
+        </div>
+        <div class="item">C: 
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod sed eaque error non, voluptas iure? Molestiae, dicta? Et quis possimus doloremque pariatur at assumenda atque autem! Possimus labore expedita natus.
+        </div>
+      
     </div>
 </body>
 </html>
