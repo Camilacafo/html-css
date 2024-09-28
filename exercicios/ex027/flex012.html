@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container{
+            background-color: lightsalmon;
+            flex-flow: row nowrap;
+            display: flex;
+        }
+
+        div.item{
+            background-color: lightblue;
+            padding: 5px;
+            border: 1px solid black;
+            text-align:center;
+            
+        }
+
+        div#cxA{
+           /* flex-shrink: 0;
+            flex-grow: 1;
+            flex-basis: auto;*/
+            flex: initial;
+        }
+
+        div#cxB{
+           /*flex-shrink: 0;
+           flex-grow: 0;
+           flex-basis: auto;*/
+           flex: none;
+        }
+
+        div#cxC{
+          /* flex-shrink: 1;
+           flex-grow: 1 ;
+           flex-basis: auto;*/
+           flex: auto;
+        }
+
+        div#cxD{
+           /* flex-shrink: 1;
+            flex-grow: 3;
+            flex-basis:auto;*/
+            flex: 3;
+        }
+
+        div#cxE{
+           /*flex-shrink: 1;
+            flex-grow: 0;
+            flex-basis:200px; */
+            flex: auto;
+        }
+
+        div#cxF{
+            /*flex-shrink: 2;
+            flex-grow: 1; 
+            flex-basis:200px;*/
+            flex: 1 2 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="cxA" class="item">A: 
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam enim quis provident inventore vel tenetur excepturi exercitationem praesentium perspiciatis iure quo sapiente maxime repudiandae, accusantium totam, voluptatibus odit aperiam. Eaque!
+        </div>
+        <div id="cxB" class="item">B: 
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum unde harum enim, sint accusantium inventore ducimus reiciendis temporibus labore quam numquam commodi odit nobis, adipisci eos. Perferendis amet illo et.
+        </div>
+        <div id="cxC" class="item">C: 
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod sed eaque error non, voluptas iure? Molestiae, dicta? Et quis possimus doloremque pariatur at assumenda atque autem! Possimus labore expedita natus.
+        </div>
+    </div>
+
+
+        <br>
+
+    <div class="container">    
+
+        <div id="cxD" class="item">A: 
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam enim quis provident inventore vel tenetur excepturi exercitationem praesentium perspiciatis iure quo sapiente maxime repudiandae, accusantium totam, voluptatibus odit aperiam. Eaque!
+        </div>
+        <div id="cxE" class="item">B: 
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum unde harum enim, sint accusantium inventore ducimus reiciendis temporibus labore quam numquam commodi odit nobis, adipisci eos. Perferendis amet illo et.
+        </div>
+        <div id="cxF" class="item">C: 
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod sed eaque error non, voluptas iure? Molestiae, dicta? Et quis possimus doloremque pariatur at assumenda atque autem! Possimus labore expedita natus.
+        </div>
+      
+    </div>
+</body>
+</html>
