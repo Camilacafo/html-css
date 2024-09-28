@@ -25,11 +25,14 @@ header{
 header > h1{
     color:  white;
     font-size: 2.5em;
-
+    flex: 0 0 200px;
 }
 
 header> nav{
     padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: end;
 }
 
 header > nav > a{
@@ -41,6 +44,7 @@ header > nav > a{
     color: rgb(245, 244, 244);
     background-color: black;
     margin: 5px;
+    
 }
 
 header> nav > a:hover{
