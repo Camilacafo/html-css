@@ -1,6 +1,6 @@
 
  
-    function clicar1() {
+function clicar1() {
     window.open('/desafios/d015/testemenu.html', '_blank')
 }
 
